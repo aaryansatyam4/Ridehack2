@@ -1,14 +1,16 @@
-// src/App.js
 import React from 'react';
-import ArTry from './Components/ArTry/ArTry';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Landingpage from './Pages/Landingpage'; // Adjust the import path if necessary
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <ArTry />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landingpage />} />
+        {/* Add more routes here if needed */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

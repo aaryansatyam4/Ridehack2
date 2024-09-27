@@ -1,0 +1,53 @@
+/* Main container for the section */
+.fitness-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff; /* Dark background to match the theme */
+    color: #000000; /* Light text color */
+  }
+  
+  /* Image container */
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .fitness-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners */
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  
+  /* Text container */
+  .text-container {
+    flex: 1;
+    padding-left: 2rem; /* Space between image and text */
+  }
+  
+  .text-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000000; /* Slightly grey text color */
+    font-weight: 300;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .fitness-section {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      max-width: 100%;
+      margin-bottom: 2rem; /* Adds space between image and text on mobile */
+    }
+  
+    .text-container {
+      padding-left: 0;
+    }
+  }
+  

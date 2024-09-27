@@ -1,0 +1,73 @@
+/* Main container */
+.confidence-section {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .confidence-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .highlight {
+    font-style: italic;
+    font-weight: 700;
+    color: #e63946; /* Red for emphasis */
+  }
+  
+  hr {
+    width: 60%;
+    margin: 1rem auto;
+    border: 0;
+    border-top: 1px solid #707070; /* Grey line */
+  }
+  
+  /* Counters container */
+  .confidence-counters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+  
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .counter p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #c1c1c1; /* Light grey for labels */
+    margin-top: 0.5rem;
+  }
+  
+  .counter span {
+    font-size: 3rem;
+    color: #e63946; /* Red color for numbers */
+    display: block;
+    font-weight: 700;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Hover and focus effects */
+  .counter span:hover {
+    transform: scale(1.1); /* Slight increase in size when hovered */
+  }
+  
+  @media (max-width: 768px) {
+    .confidence-counters {
+      flex-direction: column;
+    }
+  
+    .counter {
+      margin-bottom: 2rem;
+    }
+  }
+  

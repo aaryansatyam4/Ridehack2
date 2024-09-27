@@ -1,0 +1,91 @@
+/* Main section container */
+.plans-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Flex container for image and content */
+  .plans-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Image Section */
+  .plans-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plans-image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  }
+  
+  /* Content Section */
+  .plans-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .plans-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .plans-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #000000;
+  }
+  
+  /* Button Styling */
+  .plans-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #e63946; /* Red button */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .plans-button:hover {
+    background-color: #d12d3c; /* Darker red on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Button shadow */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .plans-container {
+      flex-direction: column;
+    }
+  
+    .plans-content {
+      text-align: center;
+    }
+  
+    .plans-content h2 {
+      font-size: 2rem;
+    }
+  
+    .plans-button {
+      font-size: 0.9rem;
+    }
+  }
+  

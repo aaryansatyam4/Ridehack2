@@ -1,0 +1,82 @@
+/* Main container */
+.why-choose-us-container {
+    background-color: #ffffff; /* Black background */
+    color: #000000; /* White text */
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  /* Card container */
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: #000000; /* Black card background */
+    border-radius: 15px;
+    padding: 2rem;
+    width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow */
+    opacity: 0; /* Hidden initially for animation */
+    transform: translateY(50px); /* Slide-up effect */
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 3rem;
+   
+  
+    color: #ff0000; /* White icon */
+  }
+  
+  .text h3 {
+    font-size: 1.5rem;
+    color: #ffffff; /* White title */
+  }
+  
+  .text p {
+    font-size: 1rem;
+    color: #ffffff; /* Light grey for description */
+    line-height: 1.6;
+  }
+  
+  /* Animation for when the card comes into view */
+  .in-view {
+    opacity: 1;
+    transform: translateY(0); /* Slide to original position */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Deep shadow on hover */
+    transform: translateY(-10px); /* Slight lift on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
