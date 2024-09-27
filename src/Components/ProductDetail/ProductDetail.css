@@ -1,0 +1,102 @@
+/* Overall Product Detail Container */
+.product-detail {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    background-color: #ff414d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #e03b42;
+  }
+  
+  /* Flexbox layout for image and product information */
+  .product-detail-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Gap between image and content */
+  }
+  
+  /* Image Styling with fixed size */
+  .product-image {
+    width: 400px; /* Adjust the width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    object-fit: cover; /* Ensures the image fits without distortion */
+  }
+  
+  /* Product Information Section */
+  .product-info {
+    max-width: 600px; /* Restrict the width for readability */
+  }
+  
+  .product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Styling for the old price (crossed out) */
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Actions (Buy and Add to Cart buttons) */
+  .product-actions {
+    margin-top: 20px;
+  }
+  
+  /* Buy Button Styling */
+  .buy-button {
+    background-color: #ff414d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #e03b42;
+  }
+  
+  /* Add to Cart Button Styling */
+  .cart-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-button:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#videoBkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Makes sure the video is behind the content */
+}
+
+.hero-section {
+  position: relative;
+  z-index: 10; /* Ensures the text stays above the video */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 12%;
+  color: rgb(255, 255, 255); /* Text color changed to white for better contrast */
+}
+
+.hero-section h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 4em 0 2em 0;
+  line-height: 30px;
+  color: rgb(0, 0, 0); /* Ensure contrast with background */
+}
+
+.hero-section p strong {
+  color: #e61603; /* Highlight Queenstown with blue */
+}
+
+.hero-section button {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 1em 1.2em;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: rgb(255, 0, 0);
+}
+
+.hero-section button:hover {
+  background-color: #14b0ee;
+  color: white;
+  border: 2px solid #14b0ee;
+}
+
+/* MEDIA QUERIES for video background */
+@media (min-aspect-ratio: 16/9) {
+  #videoBkg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBkg {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

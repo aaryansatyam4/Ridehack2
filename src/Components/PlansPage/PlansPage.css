@@ -1,0 +1,133 @@
+/* Plans Page Layout */
+body {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+    background-color: #000; /* Make the whole section black */
+    color: #f5f5f5; /* Light text color */
+    margin: 0;
+  }
+  
+  .plans-page {
+    padding: 2rem;
+    background-color: #000; /* Black background for the page */
+    color: #f5f5f5;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .plans-intro h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .plans-intro p {
+    color: #d1d1d1;
+    margin-bottom: 2rem;
+  }
+  
+  /* Service Selection */
+  .service-selection h2,
+  .price-summary h2 {
+    color: #e63946;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .service-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .service-checkbox {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .service-checkbox input {
+    margin-right: 1rem;
+    transform: scale(1.2);
+  }
+  
+  .service-checkbox label {
+    font-weight: bold;
+  }
+  
+  /* Duration Selection */
+  .duration-selection {
+    margin-top: 2rem;
+  }
+  
+  .duration-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .duration-radio {
+    margin-bottom: 1rem;
+  }
+  
+  .duration-radio input {
+    margin-right: 1rem;
+    transform: scale(1.2);
+  }
+  
+  .duration-radio label {
+    font-weight: bold;
+  }
+  
+  /* Price Summary */
+  .price-summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .price-summary strong {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Payment Section */
+  .payment-section {
+    margin-top: 2rem;
+  }
+  
+  .pay-now-btn {
+    background-color: #e63946;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-now-btn:hover {
+    background-color: #d62828;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plans-page {
+      padding: 1rem;
+    }
+  
+    .plans-intro h1 {
+      font-size: 2rem;
+    }
+  
+    .service-checkbox {
+      font-size: 1rem;
+    }
+  
+    .price-summary p {
+      font-size: 1rem;
+    }
+  }
+  

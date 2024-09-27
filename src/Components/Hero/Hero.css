@@ -38,7 +38,7 @@ body {
   align-items: flex-start;
   height: 100%;
   padding-left: 12%;
-  color: rgb(0, 0, 0); /* Text color changed to white for better contrast */
+  color: rgb(1, 1, 1); /* Text color changed to white for better contrast */
 }
 
 .hero-section h1 {

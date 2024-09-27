@@ -1,0 +1,87 @@
+/* ShopCardHome.css */
+
+/* Container for the cards */
+.shop-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .shop-card-home {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .shop-card-home:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Blurred effect */
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .card-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and smaller */
+  @media (max-width: 768px) {
+    .shop-card-home {
+      width: 250px;
+      height: 350px;
+    }
+  
+    .card-text {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  
+  /* Phones and smaller */
+  @media (max-width: 480px) {
+    .shop-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .shop-card-home {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .card-text {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
