@@ -1,11 +1,14 @@
-import React from 'react'
+// src/App.js
+import React from 'react';
+import ArTry from './Components/ArTry/ArTry';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <ArTry />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

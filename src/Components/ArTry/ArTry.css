@@ -1,0 +1,52 @@
+.artry-container {
+    text-align: center;
+  }
+  
+  .camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .webcam {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .pose-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9; /* Make sure the canvas is on top of the video */
+    width: 100%;
+    height: auto;
+  }
+  
+  .tshirt-overlay {
+    position: absolute;
+    z-index: 10; /* Ensure T-shirt is above the webcam feed and canvas */
+    height: auto;
+  }
+  
+  .tshirt-selection {
+    margin-top: 20px;
+  }
+  
+  .tshirt-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tshirt-thumbnail {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .tshirt-thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
